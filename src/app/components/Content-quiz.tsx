@@ -32,7 +32,7 @@ const ContentQuiz = () => {
   const [isQuizCompleted, setIsQuizCompleted] = useState(false); // Track quiz completion
 
   useEffect(() => {
-    const rawQuestionData = quizQuestions.map((question: any) => ({
+    const rawQuestionData = quizQuestions.map((question:any) => ({
       category: decodeURIComponent(question.category),
       type: question.type,
       difficulty: question.difficulty,
